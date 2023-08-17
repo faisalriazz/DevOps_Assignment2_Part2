@@ -694,7 +694,7 @@ window.ME_SETTINGS = {
 </body>
 </html>
 
-### Implement a backup strategy for the database. This can be achieved using a Docker volume or by running a backup script periodically
+### 1.1.5. Implement a backup strategy for the database. This can be achieved using a Docker volume or by running a backup script periodically
  * Implementing backup using named docker volume.
  * modified docker-compose file is shown below
 ```yaml
@@ -766,7 +766,7 @@ local     app_mongo-data
 local     bbd6d537ad6ea534c0f410cf577c1e699fadfea29127ca98000bb4b1cb4afb5d
 local     f0752e4b8d951426896a90a069490d5273f4c1a29bb6b370d7a45451cb886c0b
 ```
-### Implement a scaling strategy for the web application. This can be achieved by using the docker-compose scale command to create multiple instances of the web service. Verify that the web application is accessible and working correctly when scaled.
+### 1.1.6. Implement a scaling strategy for the web application. This can be achieved by using the docker-compose scale command to create multiple instances of the web service. Verify that the web application is accessible and working correctly when scaled.
 
 *  for docker compose scaling  need to change port binding in docker compose file. Modified file is shown below 
 ```yaml
@@ -830,7 +830,7 @@ curl http://localhost:3001
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 ```
-### Implement a monitoring strategy for the application. This can be achieved by using a tool like Prometheus or Grafana to monitor the health and performance of the containers.
+### 1.1.7. Implement a monitoring strategy for the application. This can be achieved by using a tool like Prometheus or Grafana to monitor the health and performance of the containers.
 
 * modifying docker compose file to implement grafana
 ```yaml
@@ -916,5 +916,5 @@ $ curl http://localhost:5000
 100    29  100    29    0     0   4577      0 --:--:-- --:--:-- --:--:--  4833<a href="/login">Found</a>.
 
 ```
-### Docker hub repo
+### 1.1.8. Docker hub repo
 https://hub.docker.com/r/faisalriazz/my-app-node/tags
